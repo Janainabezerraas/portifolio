@@ -13,7 +13,7 @@
 }
 
 body {
-  background: var(--vanilla);
+  background-color: var(--vanilla);
   color: var(--marromEscuro);
   font-family: sans-serif;
 }
@@ -207,4 +207,44 @@ form span {
 
 .article_mapa iframe {
   align-self: center;
+}
+
+
+@media screen and (max-width: 600px) {
+  header {
+
+    position: fixed;
+    
+
+  }
+  body {
+    overflow-x: hidden;
+    margin-top: 5rem;
+    outline: 1px solid red;
+ }
+
+ #about img {
+  width: 90px;
+  border-radius: 50%;
+  flex-shrink: 0;
+ }
+
+  article {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    text-align:center;
+    font-size: 0.70rem;
+  }
+
 }
